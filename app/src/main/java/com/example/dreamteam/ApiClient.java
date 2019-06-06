@@ -16,24 +16,8 @@ public class ApiClient {
     public static final String BASE_URL = "xxxxx";
 
     public static Retrofit getClient() {
-       /* if (retrofit == null) {
-            Gson gson = new GsonBuilder().create();
-
-            HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
-            httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-
-            OkHttpClient client = new OkHttpClient.Builder()
-                    .connectTimeout(500, TimeUnit.SECONDS)
-                    .addInterceptor(httpLoggingInterceptor)
-                    .readTimeout(500, TimeUnit.SECONDS).build();
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL).client(client)
-                    .addConverterFactory(GsonConverterFactory.create(gson))
-                    .addConverterFactory(GsonConverterFactory.create(gson))
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                    .build();
-        }
-        return retrofit;*/
+        //Ratnesh singh
+        
         if (retrofit ==null){
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
